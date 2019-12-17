@@ -9,17 +9,15 @@
                     class="rounded-circle">
             </div>
             <div class="col-9 pt-5">
-                <div><h1> </h1></div>
+                <div><h1>{{$user->username}}</h1></div>
                 <div class="d-flex">
                     <div class="pr-5"><strong>153</strong> post</div>
                     <div class="pr-5"><strong>23л</strong> followers</div>
                     <div class="pr-5"><strong>212</strong> following</div>
                 </div>
-                <div class="pt-4 font-weight-bold">freeCodeCamp.org</div>
-                <div>We're a global community of millions of people learning to code together. We're an open source,
-                    donor-supported, 501(c)(3) nonprofit.
-                </div>
-                <div><a href="#">www.freecodecamp.org</a></div>
+                <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+                <div>{{ $user->profile->description }}</div>
+                <div><a href="#">{{ $user->profile->url ?? 'N/A'}}</a></div>
             </div>
         </div>
 
@@ -37,7 +35,7 @@
             <div class="col-4">
                 <img
                     src="https://instagram.fprg1-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c2.0.745.745a/s640x640/73423634_2423788067939118_598762339110485792_n.jpg?_nc_ht=instagram.fprg1-1.fna.fbcdn.net&_nc_cat=106&oh=d7c85b1177c6adef4a90e9bae5f7406b&oe=5E748490"
-                   class="w-100">
+                    class="w-100">
             </div>
         </div>
     </div>
